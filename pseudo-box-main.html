@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pseudo.Class.Element</title>
+		<style>
+			h1 {
+				margin: 20px;
+			}
+			h1:hover {
+				border: 2px solid gray;
+				background: skyblue;
+			}
+			.middle-parsion:focus {
+				color: blue;
+				padding: 20px;
+			}
+			a:visited {
+				color: rgb(15, 184, 184);
+			}
+			li {
+				color: darkgoldenrod;
+			}
+
+			li:first-child {
+				color: blue;
+			}
+			li:last-child {
+				color: skyblue;
+			}
+			li:nth-child(2n) {
+				color: red;
+			}
+			li:nth-child(2n + 1) {
+				background-color: gray;
+			}
+			h3::before {
+				content: 'hello ';
+			}
+			h3::after {
+				content: ' gelo';
+				font-size: 30px;
+				padding: 8px;
+				background: rgb(175, 8, 8);
+			}
+		</style>
+	</head>
+	<body>
+		<h1>This Psudo Class</h1>
+		<input type="text" />
+		<input class="middle-parsion" type="text" />
+		<input type="text" /><br />
+		<a href="https://www.google.com/">google</a>
+		<a href="https://www.facebook.com/">facebook</a>
+		<a href="https://www.instagram.com/">instagram</a>
+		<br />
+		<h3>this is header three tag</h3>
+		<h3>this is header three tag</h3>
+		<h3>this is header three tag</h3>
+		<h3>this is header three tag</h3>
+		<h3>this is header three tag</h3>
+		<h3>this is header three tag</h3>
+		<ul>
+			<li>Aliya</li>
+			<li>daliya</li>
+			<li>kaliya</li>
+			<li>shaliya</li>
+			<li>jhalia</li>
+			<li>khaliya</li>
+		</ul>
+	</body>
+</html>
